@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일\base">
+      <UniqueIdentifier>{75233b38-2d77-444a-94fe-db227c0e242d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\base">
+      <UniqueIdentifier>{7fa43b07-4546-450a-bd0e-0d4bb747be38}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\basic_op">
+      <UniqueIdentifier>{5caef90a-9620-4a08-8813-52df2e658d68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\epd">
+      <UniqueIdentifier>{bf4fd986-aa93-4963-a139-9d5f2365228e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\mfcc2feat">
+      <UniqueIdentifier>{34f3b5a4-e110-4306-82ec-7138b6252f7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\wave2mfcc">
+      <UniqueIdentifier>{0f50e25d-8fe5-4175-a5c2-d350c77dbe25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\wiener">
+      <UniqueIdentifier>{d8658b32-de8b-4135-880b-ef9e2fc84583}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\basic_op">
+      <UniqueIdentifier>{26b6950b-38bd-4654-be3a-9b5733a8af0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\common">
+      <UniqueIdentifier>{d72a34e0-98d3-488c-b98c-c05a2f41db5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\epd">
+      <UniqueIdentifier>{3a44767e-9712-4503-a7b5-866b4aac4e54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\mfcc2feat">
+      <UniqueIdentifier>{d74bfb7b-f217-43e3-ae8d-25a0edece27c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\wave2mfcc">
+      <UniqueIdentifier>{9ae336b4-7732-4d71-8fcf-3bba8ea648ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\wiener">
+      <UniqueIdentifier>{ee18d09a-90cc-4c01-92fb-ed049e9172ca}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\base\base_lib.h">
+      <Filter>헤더 파일\base</Filter>
+    </ClInclude>
+    <ClInclude Include="include\base\binary_io.h">
+      <Filter>헤더 파일\base</Filter>
+    </ClInclude>
+    <ClInclude Include="include\base\byteorder.h">
+      <Filter>헤더 파일\base</Filter>
+    </ClInclude>
+    <ClInclude Include="include\base\case.h">
+      <Filter>헤더 파일\base</Filter>
+    </ClInclude>
+    <ClInclude Include="include\base\filename.h">
+      <Filter>헤더 파일\base</Filter>
+    </ClInclude>
+    <ClInclude Include="include\base\genrand.h">
+      <Filter>헤더 파일\base</Filter>
+    </ClInclude>
+    <ClInclude Include="include\base\glist.h">
+      <Filter>헤더 파일\base</Filter>
+    </ClInclude>
+    <ClInclude Include="include\base\hash.h">
+      <Filter>헤더 파일\base</Filter>
+    </ClInclude>
+    <ClInclude Include="include\base\hash_table.h">
+      <Filter>헤더 파일\base</Filter>
+    </ClInclude>
+    <ClInclude Include="include\base\hci_macro.h">
+      <Filter>헤더 파일\base</Filter>
+    </ClInclude>
+    <ClInclude Include="include\base\hci_malloc.h">
+      <Filter>헤더 파일\base</Filter>
+    </ClInclude>
+    <ClInclude Include="include\base\hci_msg.h">
+      <Filter>헤더 파일\base</Filter>
+    </ClInclude>
+    <ClInclude Include="include\base\hci_type.h">
+      <Filter>헤더 파일\base</Filter>
+    </ClInclude>
+    <ClInclude Include="include\base\linklist.h">
+      <Filter>헤더 파일\base</Filter>
+    </ClInclude>
+    <ClInclude Include="include\base\parse_config.h">
+      <Filter>헤더 파일\base</Filter>
+    </ClInclude>
+    <ClInclude Include="include\base\str2words.h">
+      <Filter>헤더 파일\base</Filter>
+    </ClInclude>
+    <ClInclude Include="include\base\utf8.h">
+      <Filter>헤더 파일\base</Filter>
+    </ClInclude>
+    <ClInclude Include="include\basic_op\basic_op.h">
+      <Filter>헤더 파일\basic_op</Filter>
+    </ClInclude>
+    <ClInclude Include="include\basic_op\fixpoint.h">
+      <Filter>헤더 파일\basic_op</Filter>
+    </ClInclude>
+    <ClInclude Include="include\basic_op\hci_logadd.h">
+      <Filter>헤더 파일\basic_op</Filter>
+    </ClInclude>
+    <ClInclude Include="include\epd\epd_common.h">
+      <Filter>헤더 파일\epd</Filter>
+    </ClInclude>
+    <ClInclude Include="include\epd\epd_main.h">
+      <Filter>헤더 파일\epd</Filter>
+    </ClInclude>
+    <ClInclude Include="include\epd\hci_epd.h">
+      <Filter>헤더 파일\epd</Filter>
+    </ClInclude>
+    <ClInclude Include="include\common\hci_asr_common.h">
+      <Filter>헤더 파일\common</Filter>
+    </ClInclude>
+    <ClInclude Include="include\common\powerasr_const.h">
+      <Filter>헤더 파일\common</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mfcc2feat\fx_agc.h">
+      <Filter>헤더 파일\mfcc2feat</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mfcc2feat\fx_cms.h">
+      <Filter>헤더 파일\mfcc2feat</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mfcc2feat\fx_compressframe.h">
+      <Filter>헤더 파일\mfcc2feat</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mfcc2feat\fx_delta.h">
+      <Filter>헤더 파일\mfcc2feat</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mfcc2feat\fx_dropframe.h">
+      <Filter>헤더 파일\mfcc2feat</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mfcc2feat\fx_mfcc2feat.h">
+      <Filter>헤더 파일\mfcc2feat</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mfcc2feat\fx_quantizer.h">
+      <Filter>헤더 파일\mfcc2feat</Filter>
+    </ClInclude>
+    <ClInclude Include="include\mfcc2feat\hci_fx_mfcc2feat.h">
+      <Filter>헤더 파일\mfcc2feat</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wave2mfcc\fx_hamming.h">
+      <Filter>헤더 파일\wave2mfcc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wave2mfcc\fx_mfcc.h">
+      <Filter>헤더 파일\wave2mfcc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wave2mfcc\fx_mfcc_common.h">
+      <Filter>헤더 파일\wave2mfcc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wave2mfcc\fx_sigproc.h">
+      <Filter>헤더 파일\wave2mfcc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wave2mfcc\hci_wave2mfcc.h">
+      <Filter>헤더 파일\wave2mfcc</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wiener\BufferIn.h">
+      <Filter>헤더 파일\wiener</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wiener\classifyFrame.h">
+      <Filter>헤더 파일\wiener</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wiener\computePCorr.h">
+      <Filter>헤더 파일\wiener</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wiener\dsrAfeVad.h">
+      <Filter>헤더 파일\wiener</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wiener\hci_wiener.h">
+      <Filter>헤더 파일\wiener</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wiener\MelProcExports.h">
+      <Filter>헤더 파일\wiener</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wiener\NoiseSup.h">
+      <Filter>헤더 파일\wiener</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wiener\NoiseSupExports.h">
+      <Filter>헤더 파일\wiener</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wiener\ParmInterface.h">
+      <Filter>헤더 파일\wiener</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wiener\ParmType.h">
+      <Filter>헤더 파일\wiener</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wiener\pitchInterface.h">
+      <Filter>헤더 파일\wiener</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wiener\preProc.h">
+      <Filter>헤더 파일\wiener</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wiener\wiener_common.h">
+      <Filter>헤더 파일\wiener</Filter>
+    </ClInclude>
+    <ClInclude Include="include\wiener\x_default.h">
+      <Filter>헤더 파일\wiener</Filter>
+    </ClInclude>
+    <ClInclude Include="include\pffft.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\base\binary_io.c">
+      <Filter>소스 파일\base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\case.c">
+      <Filter>소스 파일\base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\filename.c">
+      <Filter>소스 파일\base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\genrand.c">
+      <Filter>소스 파일\base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\glist.c">
+      <Filter>소스 파일\base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\hash.c">
+      <Filter>소스 파일\base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\hash_table.c">
+      <Filter>소스 파일\base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\hci_malloc.c">
+      <Filter>소스 파일\base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\hci_msg.c">
+      <Filter>소스 파일\base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\linklist.c">
+      <Filter>소스 파일\base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\parse_config.c">
+      <Filter>소스 파일\base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\str2words.c">
+      <Filter>소스 파일\base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\base\utf8.c">
+      <Filter>소스 파일\base</Filter>
+    </ClCompile>
+    <ClCompile Include="src\basic_op\basic_op.c">
+      <Filter>소스 파일\basic_op</Filter>
+    </ClCompile>
+    <ClCompile Include="src\epd\epd_main.c">
+      <Filter>소스 파일\epd</Filter>
+    </ClCompile>
+    <ClCompile Include="src\epd\hci_epd.c">
+      <Filter>소스 파일\epd</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mfcc2feat\fx_agc.c">
+      <Filter>소스 파일\mfcc2feat</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mfcc2feat\fx_cms.c">
+      <Filter>소스 파일\mfcc2feat</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mfcc2feat\fx_compressframe.c">
+      <Filter>소스 파일\mfcc2feat</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mfcc2feat\fx_delta.c">
+      <Filter>소스 파일\mfcc2feat</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mfcc2feat\fx_dropframe.c">
+      <Filter>소스 파일\mfcc2feat</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mfcc2feat\fx_mfcc2feat.c">
+      <Filter>소스 파일\mfcc2feat</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mfcc2feat\fx_quantizer.c">
+      <Filter>소스 파일\mfcc2feat</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mfcc2feat\hci_fx_mfcc2feat.c">
+      <Filter>소스 파일\mfcc2feat</Filter>
+    </ClCompile>
+    <ClCompile Include="src\wave2mfcc\fx_hamming.c">
+      <Filter>소스 파일\wave2mfcc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\wave2mfcc\fx_mfcc.c">
+      <Filter>소스 파일\wave2mfcc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\wave2mfcc\fx_sigproc.c">
+      <Filter>소스 파일\wave2mfcc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\wave2mfcc\hci_wave2mfcc.c">
+      <Filter>소스 파일\wave2mfcc</Filter>
+    </ClCompile>
+    <ClCompile Include="src\wiener\BufferIn.c">
+      <Filter>소스 파일\wiener</Filter>
+    </ClCompile>
+    <ClCompile Include="src\wiener\classifyFrame.c">
+      <Filter>소스 파일\wiener</Filter>
+    </ClCompile>
+    <ClCompile Include="src\wiener\computePCorr.c">
+      <Filter>소스 파일\wiener</Filter>
+    </ClCompile>
+    <ClCompile Include="src\wiener\dsrAfeVad.c">
+      <Filter>소스 파일\wiener</Filter>
+    </ClCompile>
+    <ClCompile Include="src\wiener\hci_wiener.c">
+      <Filter>소스 파일\wiener</Filter>
+    </ClCompile>
+    <ClCompile Include="src\wiener\MelProc.c">
+      <Filter>소스 파일\wiener</Filter>
+    </ClCompile>
+    <ClCompile Include="src\wiener\NoiseSup.c">
+      <Filter>소스 파일\wiener</Filter>
+    </ClCompile>
+    <ClCompile Include="src\wiener\ParmInterface.c">
+      <Filter>소스 파일\wiener</Filter>
+    </ClCompile>
+    <ClCompile Include="src\wiener\pitch.c">
+      <Filter>소스 파일\wiener</Filter>
+    </ClCompile>
+    <ClCompile Include="src\wiener\preProc.c">
+      <Filter>소스 파일\wiener</Filter>
+    </ClCompile>
+    <ClCompile Include="src\pffft.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

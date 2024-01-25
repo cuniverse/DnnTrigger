@@ -1,0 +1,51 @@
+
+typedef enum{
+	SUCCESS,
+	FAIL,
+} DNN_Result;
+
+/** Nonlinear function type Enum. */
+typedef enum{
+	SIGMOID,
+	RELU,
+	SOFTMAX,
+	LINEAR
+} DNN_NonLinearUnit;
+
+typedef struct{
+	short n_layer;								///< # of layers == input layer + hidden layer num + output layer
+	float* unit[MAX_NUM_LAYER];	///< pointer to output, dnn_output[0] should be the pointer to input data
+} DNN_LAYER_UNIT;
+
+/** Structure holding layer pair info for RBM pre-training. */
+typedef struct {
+	short nHidNodes;					///< # of hidden nodes
+	short nVisNodes;					///< # of visible nodes
+	float* dnnHidBias;					///< pointer to hidden bias
+	float* dnnVisBias;					///< pointer to visible bias
+	float* dnnWeight;					///< pointer to weights
+} DNN_Stage;
+
+/** Structure holding entire DBM. */
+typedef struct{
+	short nStage;							///< # of layer pairs
+	DNN_Stage dnnStage[MAX_NUM_STAGE];				///< pointer to rbm layer pair
+	DNN_NonLinearUnit nonLinearFunc[MAX_NUM_STAGE];
+} Deepnet;
+
+/** Structure holding DNN train info. */
+typedef struct{
+	DNN_TaskType taskType;
+	Deepnet* pDeepnet;			///dnn 모델 할당(cpu)
+	Deepnet* pDeepnet_gpu;			///dnn 모델 할당(gpu)
+	short svd_k[MAX_NUM_STAGE];
+	int bUseSeedDnn;			///훈련시 seed model 사용여부
+	char szSeedDnnFile[MAXSTRLEN];
+	DNN_StructParam dnnStructParam;
+	DNN_TrainParam	dnnTrainParam;
+	DNN_TestResource testDevResource;
+	DNN_TestResource testValiResource;
+	DNN_LAYER_UNIT* p_dnn_output;		///채널별 메모리 할당 해야됨
+	float* mini_one_vec;
+	float* class_one_vec;
+} DNN_Resource;

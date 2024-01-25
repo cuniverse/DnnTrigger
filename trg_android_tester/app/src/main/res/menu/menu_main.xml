@@ -1,0 +1,36 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.diotek.stt.trgandroidtester.MainActivity">
+    <item android:title="Record PCM file"
+          android:orderInCategory="10"
+        android:checkable="false"
+        android:id="@+id/action_pcmsave" />
+    <item android:title="Save spot"
+          android:orderInCategory="11"
+        android:checkable="true"
+        android:id="@+id/action_savespot" />
+    <item android:title="Show log"
+          android:orderInCategory="12"
+        android:checkable="true"
+        android:id="@+id/action_log" />
+    <item
+        android:id="@+id/action_screenon"
+        android:orderInCategory="14"
+        android:title="Keep screen on"
+        android:checkable="true" />
+    <item android:title="Amplitude 2X"
+          android:orderInCategory="13"
+          android:checkable="true"
+          android:id="@+id/action_am2x" />
+
+    <item android:title="USE Communication Mode"
+          android:orderInCategory="15"
+          android:checkable="true"
+          android:id="@+id/action_use_comm" />
+
+    <item android:title="HIDE"
+          android:orderInCategory="1"
+          android:id="@+id/hide" />
+
+</menu>

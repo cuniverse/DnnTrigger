@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\frontend\hci_FrontEnd.c" />
+    <ClCompile Include="src\frontend\powerdsr_frontend.c" />
+    <ClCompile Include="src\hmm\dtree.c" />
+    <ClCompile Include="src\hmm\hci_resource_hmm.c" />
+    <ClCompile Include="src\hmm\load_hmm.c" />
+    <ClCompile Include="src\hmm\phoneseq2statenet.c" />
+    <ClCompile Include="src\hmm\phoneseq2symbolseq.c" />
+    <ClCompile Include="src\lexicon\hci_resource_lexicon.c" />
+    <ClCompile Include="src\lexicon\load_lexicon.c" />
+    <ClCompile Include="src\lexicon\text2lex.c" />
+    <ClCompile Include="src\speex\bits.c" />
+    <ClCompile Include="src\speex\bitwise.c" />
+    <ClCompile Include="src\speex\cb_search.c" />
+    <ClCompile Include="src\speex\exc_10_16_table.c" />
+    <ClCompile Include="src\speex\exc_10_32_table.c" />
+    <ClCompile Include="src\speex\exc_20_32_table.c" />
+    <ClCompile Include="src\speex\exc_5_256_table.c" />
+    <ClCompile Include="src\speex\exc_5_64_table.c" />
+    <ClCompile Include="src\speex\exc_8_128_table.c" />
+    <ClCompile Include="src\speex\filters.c" />
+    <ClCompile Include="src\speex\framing.c" />
+    <ClCompile Include="src\speex\gain_table.c" />
+    <ClCompile Include="src\speex\gain_table_lbr.c" />
+    <ClCompile Include="src\speex\hci_speex.c" />
+    <ClCompile Include="src\speex\hexc_10_32_table.c" />
+    <ClCompile Include="src\speex\hexc_table.c" />
+    <ClCompile Include="src\speex\high_lsp_tables.c" />
+    <ClCompile Include="src\speex\lpc.c" />
+    <ClCompile Include="src\speex\lsp.c" />
+    <ClCompile Include="src\speex\lsp_tables_nb.c" />
+    <ClCompile Include="src\speex\ltp.c" />
+    <ClCompile Include="src\speex\modes.c" />
+    <ClCompile Include="src\speex\modes_wb.c" />
+    <ClCompile Include="src\speex\nb_celp.c" />
+    <ClCompile Include="src\speex\quant_lsp.c" />
+    <ClCompile Include="src\speex\sb_celp.c" />
+    <ClCompile Include="src\speex\speex.c" />
+    <ClCompile Include="src\speex\speex_callbacks.c" />
+    <ClCompile Include="src\speex\speex_header.c" />
+    <ClCompile Include="src\speex\stereo.c" />
+    <ClCompile Include="src\speex\vbr.c" />
+    <ClCompile Include="src\speex\vq.c" />
+    <ClCompile Include="src\speex\window.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\frontend\hci_FrontEnd.h" />
+    <ClInclude Include="include\frontend\powerdsr_frontend.h" />
+    <ClInclude Include="include\frontend\wave_format.h" />
+    <ClInclude Include="include\hmm\dtree.h" />
+    <ClInclude Include="include\hmm\hci_resource_hmm.h" />
+    <ClInclude Include="include\hmm\hmm_common.h" />
+    <ClInclude Include="include\hmm\hmm_state_net.h" />
+    <ClInclude Include="include\hmm\load_hmm.h" />
+    <ClInclude Include="include\hmm\phoneseq2statenet.h" />
+    <ClInclude Include="include\hmm\phoneseq2symbolseq.h" />
+    <ClInclude Include="include\lexicon\hci_resource_lexicon.h" />
+    <ClInclude Include="include\lexicon\kor_g2p_res.h" />
+    <ClInclude Include="include\lexicon\lexicon_common.h" />
+    <ClInclude Include="include\lexicon\load_lexicon.h" />
+    <ClInclude Include="include\lexicon\text2lex.h" />
+    <ClInclude Include="include\phone_decoder\hci_phone_decoder.h" />
+    <ClInclude Include="include\phone_decoder\phosearch_common.h" />
+    <ClInclude Include="include\speex\arch.h" />
+    <ClInclude Include="include\speex\cb_search.h" />
+    <ClInclude Include="include\speex\cb_search_sse.h" />
+    <ClInclude Include="include\speex\config.h" />
+    <ClInclude Include="include\speex\filters.h" />
+    <ClInclude Include="include\speex\filters_sse.h" />
+    <ClInclude Include="include\speex\fixed_debug.h" />
+    <ClInclude Include="include\speex\fixed_generic.h" />
+    <ClInclude Include="include\speex\hci_speex.h" />
+    <ClInclude Include="include\speex\lpc.h" />
+    <ClInclude Include="include\speex\lsp.h" />
+    <ClInclude Include="include\speex\ltp.h" />
+    <ClInclude Include="include\speex\ltp_sse.h" />
+    <ClInclude Include="include\speex\math_approx.h" />
+    <ClInclude Include="include\speex\modes.h" />
+    <ClInclude Include="include\speex\nb_celp.h" />
+    <ClInclude Include="include\speex\ogg.h" />
+    <ClInclude Include="include\speex\os_support.h" />
+    <ClInclude Include="include\speex\os_types.h" />
+    <ClInclude Include="include\speex\quant_lsp.h" />
+    <ClInclude Include="include\speex\sb_celp.h" />
+    <ClInclude Include="include\speex\speex.h" />
+    <ClInclude Include="include\speex\speex_bits.h" />
+    <ClInclude Include="include\speex\speex_callbacks.h" />
+    <ClInclude Include="include\speex\speex_header.h" />
+    <ClInclude Include="include\speex\speex_stereo.h" />
+    <ClInclude Include="include\speex\speex_types.h" />
+    <ClInclude Include="include\speex\stack_alloc.h" />
+    <ClInclude Include="include\speex\vbr.h" />
+    <ClInclude Include="include\speex\vq.h" />
+    <ClInclude Include="include\speex\vq_sse.h" />
+    <ClInclude Include="include\state_oprob\hci_state_oprob.h" />
+    <ClInclude Include="include\state_oprob\oprob_common.h" />
+    <ClInclude Include="include\symbol_match\hci_symbol_match.h" />
+    <ClInclude Include="include\symbol_match\smatch_common.h" />
+    <ClInclude Include="include\verifier\hci_result_verifier.h" />
+    <ClInclude Include="include\viterbi\hci_viterbi_scorer.h" />
+    <ClInclude Include="include\viterbi\viterbi_common.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{011BADE6-2308-41BB-945F-CA041E1E2933}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>FrontEnd</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>include;..\Feat2Pass\include;..\DNNEpd\DIOAcousticRecog\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>include;..\Feat2Pass\include;..\DNNEpd\DIOAcousticRecog\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>include;..\Feat2Pass\include;..\DNNEpd\DIOAcousticRecog\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <FloatingPointModel>Fast</FloatingPointModel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>include;..\Feat2Pass\include;..\DNNEpd\DIOAcousticRecog\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <FloatingPointModel>Fast</FloatingPointModel>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

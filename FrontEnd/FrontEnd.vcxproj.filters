@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\frontend">
+      <UniqueIdentifier>{904a0e19-e989-4286-bf3c-31b1ba8ef908}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\hmm">
+      <UniqueIdentifier>{560eca41-896d-464b-9e54-a64b64ae353c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\lexicon">
+      <UniqueIdentifier>{eb35aed1-dc49-4f6b-9a93-3e355973a4b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\speex">
+      <UniqueIdentifier>{8cbdc0c6-8384-4f38-b988-996d3add49fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\frontend">
+      <UniqueIdentifier>{091bfd80-a097-4476-912d-234cf2eeb945}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\hmm">
+      <UniqueIdentifier>{3b65ffbc-0c5e-4fa9-9b69-8509edcc03dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\lexicon">
+      <UniqueIdentifier>{5d6c8714-25f8-4a80-a717-d0409ed8dd80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\phone_decoder">
+      <UniqueIdentifier>{a80a28cb-797d-40f6-a244-34f61a84f396}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\speex">
+      <UniqueIdentifier>{de5bfc6c-1562-4f5e-8f20-4cfafa96c4a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\state_oprob">
+      <UniqueIdentifier>{25e88003-8cd8-4700-ad5c-029ae5938dc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\symbol_match">
+      <UniqueIdentifier>{0cc60742-232b-43d5-9a5a-76cc5659730e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\verifier">
+      <UniqueIdentifier>{295c319b-a7f7-4b6f-939f-72be39e92639}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\viterbi">
+      <UniqueIdentifier>{d182f98a-fba3-4c5b-8042-154025271166}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\frontend\hci_FrontEnd.c">
+      <Filter>소스 파일\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="src\frontend\powerdsr_frontend.c">
+      <Filter>소스 파일\frontend</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hmm\dtree.c">
+      <Filter>소스 파일\hmm</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hmm\hci_resource_hmm.c">
+      <Filter>소스 파일\hmm</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hmm\load_hmm.c">
+      <Filter>소스 파일\hmm</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hmm\phoneseq2statenet.c">
+      <Filter>소스 파일\hmm</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hmm\phoneseq2symbolseq.c">
+      <Filter>소스 파일\hmm</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lexicon\hci_resource_lexicon.c">
+      <Filter>소스 파일\lexicon</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lexicon\load_lexicon.c">
+      <Filter>소스 파일\lexicon</Filter>
+    </ClCompile>
+    <ClCompile Include="src\lexicon\text2lex.c">
+      <Filter>소스 파일\lexicon</Filter>
+    </ClCompile>
+    <ClCompile Include="src\speex\bits.c">
+      <Filter>소스 파일\speex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\speex\bitwise.c">
+      <Filter>소스 파일\speex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\speex\cb_search.c">
+      <Filter>소스 파일\speex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\speex\exc_5_64_table.c">
+      <Filter>소스 파일\speex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\speex\exc_5_256_table.c">
+      <Filter>소스 파일\speex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\speex\exc_8_128_table.c">
+      <Filter>소스 파일\speex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\speex\exc_10_16_table.c">
+      <Filter>소스 파일\speex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\speex\exc_10_32_table.c">
+      <Filter>소스 파일\speex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\speex\exc_20_32_table.c">
+      <Filter>소스 파일\speex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\speex\filters.c">
+      <Filter>소스 파일\speex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\speex\framing.c">
+      <Filter>소스 파일\speex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\speex\gain_table.c">
+      <Filter>소스 파일\speex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\speex\gain_table_lbr.c">
+      <Filter>소스 파일\speex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\speex\hci_speex.c">
+      <Filter>소스 파일\speex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\speex\hexc_10_32_table.c">
+      <Filter>소스 파일\speex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\speex\hexc_table.c">
+      <Filter>소스 파일\speex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\speex\high_lsp_tables.c">
+      <Filter>소스 파일\speex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\speex\lpc.c">
+      <Filter>소스 파일\speex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\speex\lsp.c">
+      <Filter>소스 파일\speex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\speex\lsp_tables_nb.c">
+      <Filter>소스 파일\speex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\speex\ltp.c">
+      <Filter>소스 파일\speex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\speex\modes.c">
+      <Filter>소스 파일\speex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\speex\modes_wb.c">
+      <Filter>소스 파일\speex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\speex\nb_celp.c">
+      <Filter>소스 파일\speex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\speex\quant_lsp.c">
+      <Filter>소스 파일\speex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\speex\sb_celp.c">
+      <Filter>소스 파일\speex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\speex\speex.c">
+      <Filter>소스 파일\speex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\speex\speex_callbacks.c">
+      <Filter>소스 파일\speex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\speex\speex_header.c">
+      <Filter>소스 파일\speex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\speex\stereo.c">
+      <Filter>소스 파일\speex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\speex\vbr.c">
+      <Filter>소스 파일\speex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\speex\vq.c">
+      <Filter>소스 파일\speex</Filter>
+    </ClCompile>
+    <ClCompile Include="src\speex\window.c">
+      <Filter>소스 파일\speex</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\frontend\hci_FrontEnd.h">
+      <Filter>헤더 파일\frontend</Filter>
+    </ClInclude>
+    <ClInclude Include="include\frontend\powerdsr_frontend.h">
+      <Filter>헤더 파일\frontend</Filter>
+    </ClInclude>
+    <ClInclude Include="include\frontend\wave_format.h">
+      <Filter>헤더 파일\frontend</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hmm\dtree.h">
+      <Filter>헤더 파일\hmm</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hmm\hci_resource_hmm.h">
+      <Filter>헤더 파일\hmm</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hmm\hmm_common.h">
+      <Filter>헤더 파일\hmm</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hmm\hmm_state_net.h">
+      <Filter>헤더 파일\hmm</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hmm\load_hmm.h">
+      <Filter>헤더 파일\hmm</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hmm\phoneseq2statenet.h">
+      <Filter>헤더 파일\hmm</Filter>
+    </ClInclude>
+    <ClInclude Include="include\hmm\phoneseq2symbolseq.h">
+      <Filter>헤더 파일\hmm</Filter>
+    </ClInclude>
+    <ClInclude Include="include\lexicon\hci_resource_lexicon.h">
+      <Filter>헤더 파일\lexicon</Filter>
+    </ClInclude>
+    <ClInclude Include="include\lexicon\kor_g2p_res.h">
+      <Filter>헤더 파일\lexicon</Filter>
+    </ClInclude>
+    <ClInclude Include="include\lexicon\lexicon_common.h">
+      <Filter>헤더 파일\lexicon</Filter>
+    </ClInclude>
+    <ClInclude Include="include\lexicon\load_lexicon.h">
+      <Filter>헤더 파일\lexicon</Filter>
+    </ClInclude>
+    <ClInclude Include="include\lexicon\text2lex.h">
+      <Filter>헤더 파일\lexicon</Filter>
+    </ClInclude>
+    <ClInclude Include="include\phone_decoder\hci_phone_decoder.h">
+      <Filter>헤더 파일\phone_decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="include\phone_decoder\phosearch_common.h">
+      <Filter>헤더 파일\phone_decoder</Filter>
+    </ClInclude>
+    <ClInclude Include="include\speex\arch.h">
+      <Filter>헤더 파일\speex</Filter>
+    </ClInclude>
+    <ClInclude Include="include\speex\cb_search.h">
+      <Filter>헤더 파일\speex</Filter>
+    </ClInclude>
+    <ClInclude Include="include\speex\cb_search_sse.h">
+      <Filter>헤더 파일\speex</Filter>
+    </ClInclude>
+    <ClInclude Include="include\speex\config.h">
+      <Filter>헤더 파일\speex</Filter>
+    </ClInclude>
+    <ClInclude Include="include\speex\filters.h">
+      <Filter>헤더 파일\speex</Filter>
+    </ClInclude>
+    <ClInclude Include="include\speex\filters_sse.h">
+      <Filter>헤더 파일\speex</Filter>
+    </ClInclude>
+    <ClInclude Include="include\speex\fixed_debug.h">
+      <Filter>헤더 파일\speex</Filter>
+    </ClInclude>
+    <ClInclude Include="include\speex\fixed_generic.h">
+      <Filter>헤더 파일\speex</Filter>
+    </ClInclude>
+    <ClInclude Include="include\speex\hci_speex.h">
+      <Filter>헤더 파일\speex</Filter>
+    </ClInclude>
+    <ClInclude Include="include\speex\lpc.h">
+      <Filter>헤더 파일\speex</Filter>
+    </ClInclude>
+    <ClInclude Include="include\speex\lsp.h">
+      <Filter>헤더 파일\speex</Filter>
+    </ClInclude>
+    <ClInclude Include="include\speex\ltp.h">
+      <Filter>헤더 파일\speex</Filter>
+    </ClInclude>
+    <ClInclude Include="include\speex\ltp_sse.h">
+      <Filter>헤더 파일\speex</Filter>
+    </ClInclude>
+    <ClInclude Include="include\speex\math_approx.h">
+      <Filter>헤더 파일\speex</Filter>
+    </ClInclude>
+    <ClInclude Include="include\speex\modes.h">
+      <Filter>헤더 파일\speex</Filter>
+    </ClInclude>
+    <ClInclude Include="include\speex\nb_celp.h">
+      <Filter>헤더 파일\speex</Filter>
+    </ClInclude>
+    <ClInclude Include="include\speex\ogg.h">
+      <Filter>헤더 파일\speex</Filter>
+    </ClInclude>
+    <ClInclude Include="include\speex\os_support.h">
+      <Filter>헤더 파일\speex</Filter>
+    </ClInclude>
+    <ClInclude Include="include\speex\os_types.h">
+      <Filter>헤더 파일\speex</Filter>
+    </ClInclude>
+    <ClInclude Include="include\speex\quant_lsp.h">
+      <Filter>헤더 파일\speex</Filter>
+    </ClInclude>
+    <ClInclude Include="include\speex\sb_celp.h">
+      <Filter>헤더 파일\speex</Filter>
+    </ClInclude>
+    <ClInclude Include="include\speex\speex.h">
+      <Filter>헤더 파일\speex</Filter>
+    </ClInclude>
+    <ClInclude Include="include\speex\speex_bits.h">
+      <Filter>헤더 파일\speex</Filter>
+    </ClInclude>
+    <ClInclude Include="include\speex\speex_callbacks.h">
+      <Filter>헤더 파일\speex</Filter>
+    </ClInclude>
+    <ClInclude Include="include\speex\speex_header.h">
+      <Filter>헤더 파일\speex</Filter>
+    </ClInclude>
+    <ClInclude Include="include\speex\speex_stereo.h">
+      <Filter>헤더 파일\speex</Filter>
+    </ClInclude>
+    <ClInclude Include="include\speex\speex_types.h">
+      <Filter>헤더 파일\speex</Filter>
+    </ClInclude>
+    <ClInclude Include="include\speex\stack_alloc.h">
+      <Filter>헤더 파일\speex</Filter>
+    </ClInclude>
+    <ClInclude Include="include\speex\vbr.h">
+      <Filter>헤더 파일\speex</Filter>
+    </ClInclude>
+    <ClInclude Include="include\speex\vq.h">
+      <Filter>헤더 파일\speex</Filter>
+    </ClInclude>
+    <ClInclude Include="include\speex\vq_sse.h">
+      <Filter>헤더 파일\speex</Filter>
+    </ClInclude>
+    <ClInclude Include="include\state_oprob\hci_state_oprob.h">
+      <Filter>헤더 파일\state_oprob</Filter>
+    </ClInclude>
+    <ClInclude Include="include\state_oprob\oprob_common.h">
+      <Filter>헤더 파일\state_oprob</Filter>
+    </ClInclude>
+    <ClInclude Include="include\symbol_match\hci_symbol_match.h">
+      <Filter>헤더 파일\symbol_match</Filter>
+    </ClInclude>
+    <ClInclude Include="include\symbol_match\smatch_common.h">
+      <Filter>헤더 파일\symbol_match</Filter>
+    </ClInclude>
+    <ClInclude Include="include\verifier\hci_result_verifier.h">
+      <Filter>헤더 파일\verifier</Filter>
+    </ClInclude>
+    <ClInclude Include="include\viterbi\hci_viterbi_scorer.h">
+      <Filter>헤더 파일\viterbi</Filter>
+    </ClInclude>
+    <ClInclude Include="include\viterbi\viterbi_common.h">
+      <Filter>헤더 파일\viterbi</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

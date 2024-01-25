@@ -1,0 +1,37 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdk 31
+
+    defaultConfig {
+        applicationId "com.selvasai.trigger"
+        minSdk 14
+        targetSdk 31
+        versionCode 1
+        versionName "1.0"
+
+        buildConfigField "long", "TIMESTAMP", System.currentTimeMillis() + "L"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            ext {
+                nativeDebuggable = true
+            }
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    implementation 'com.android.support:appcompat-v7:24.2.1'
+    implementation 'com.android.support:design:24.2.1'
+    implementation project(path: ':selvywakeup')
+}

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.diotek.stt.trgandroidtester.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin">
+
+            <com.diotek.stt.trgandroidtester.ShowWaveform
+                android:id="@+id/swf_swf"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <ScrollView
+                android:id="@+id/sv_log"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/sample_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </ScrollView>
+
+            <com.diotek.stt.trgandroidtester.AutoResizeTextView
+
+                android:id="@+id/tv_trig"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="○"
+                android:textAlignment="center"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:textColor="#ebef00"
+                android:textSize="100000dp"
+                android:textStyle="bold"
+                android:visibility="invisible"/>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:padding="16dp">
+
+            <!--com.diotek.stt.trgandroidtester.ShowRecWave
+                android:id="@+id/srw_srw"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" /-->
+
+            <com.diotek.stt.trgandroidtester.AutoResizeTextView
+
+                android:id="@+id/tv_Listen"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/trigger_detected_msg"
+                android:textAlignment="center"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:textColor="#78909c"
+                android:textSize="10000dp"/>
+
+            <TextView
+                android:id="@+id/tv_recording"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="0dp"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:text="● Recording"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:textColor="#FFFF0000"
+                android:textStyle="normal|bold"
+                android:visibility="invisible"/>
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+</FrameLayout>

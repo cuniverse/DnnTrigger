@@ -1,0 +1,25 @@
+ret = DNN_LoadConfig(&dnnResource, argv[1]);
+
+Deepnet* pDeepnet = DNN_create(dnnResource.dnnStructParam.numLayer, dnnResource.dnnStructParam.numNodes);
+
+ret = DNN_load_dnn(pDeepnet, dnnResource.szSeedDnnFile);
+
+p_dnn_output = DNN_create_layer_unit(pDeepnet_tri); //dnn output 저장
+
+---------------------------------------------------------------
+dnn 디코더를 위한 환경변수 로딩 : dnn_LoadConfig();
+dnn 모델 로딩 : 1번 만 수행, 채널별 공유 --> load_dnn_Model();
+dnn 계산을 위한 메모리 생성 : 채널 별 생성 --> create_dnn_??();
+
+
+
+
+---------------------------------------------------------------
+메모리 해제.....
+
+
+
+
+------------------ lvcsr 에 적용 된 상태 -----------------
+Load_DNN_MODEL((DNN_Resource *)(&dnn_resource));
+//	DNN_destroy_layer_unit(pDeepnet, p_dnn_output);//yowon 2015-03-25

@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\base\base_lib.h" />
+    <ClInclude Include="include\base\binary_io.h" />
+    <ClInclude Include="include\base\byteorder.h" />
+    <ClInclude Include="include\base\case.h" />
+    <ClInclude Include="include\base\filename.h" />
+    <ClInclude Include="include\base\genrand.h" />
+    <ClInclude Include="include\base\glist.h" />
+    <ClInclude Include="include\base\hash.h" />
+    <ClInclude Include="include\base\hash_table.h" />
+    <ClInclude Include="include\base\hci_macro.h" />
+    <ClInclude Include="include\base\hci_malloc.h" />
+    <ClInclude Include="include\base\hci_msg.h" />
+    <ClInclude Include="include\base\hci_type.h" />
+    <ClInclude Include="include\base\linklist.h" />
+    <ClInclude Include="include\base\parse_config.h" />
+    <ClInclude Include="include\base\str2words.h" />
+    <ClInclude Include="include\base\utf8.h" />
+    <ClInclude Include="include\basic_op\basic_op.h" />
+    <ClInclude Include="include\basic_op\fixpoint.h" />
+    <ClInclude Include="include\basic_op\hci_logadd.h" />
+    <ClInclude Include="include\common\hci_asr_common.h" />
+    <ClInclude Include="include\common\powerasr_const.h" />
+    <ClInclude Include="include\epd\epd_common.h" />
+    <ClInclude Include="include\epd\epd_main.h" />
+    <ClInclude Include="include\epd\hci_epd.h" />
+    <ClInclude Include="include\mfcc2feat\fx_agc.h" />
+    <ClInclude Include="include\mfcc2feat\fx_cms.h" />
+    <ClInclude Include="include\mfcc2feat\fx_compressframe.h" />
+    <ClInclude Include="include\mfcc2feat\fx_delta.h" />
+    <ClInclude Include="include\mfcc2feat\fx_dropframe.h" />
+    <ClInclude Include="include\mfcc2feat\fx_mfcc2feat.h" />
+    <ClInclude Include="include\mfcc2feat\fx_quantizer.h" />
+    <ClInclude Include="include\mfcc2feat\hci_fx_mfcc2feat.h" />
+    <ClInclude Include="include\pffft.h" />
+    <ClInclude Include="include\wave2mfcc\fx_hamming.h" />
+    <ClInclude Include="include\wave2mfcc\fx_mfcc.h" />
+    <ClInclude Include="include\wave2mfcc\fx_mfcc_common.h" />
+    <ClInclude Include="include\wave2mfcc\fx_sigproc.h" />
+    <ClInclude Include="include\wave2mfcc\hci_wave2mfcc.h" />
+    <ClInclude Include="include\wiener\BufferIn.h" />
+    <ClInclude Include="include\wiener\classifyFrame.h" />
+    <ClInclude Include="include\wiener\computePCorr.h" />
+    <ClInclude Include="include\wiener\dsrAfeVad.h" />
+    <ClInclude Include="include\wiener\hci_wiener.h" />
+    <ClInclude Include="include\wiener\MelProcExports.h" />
+    <ClInclude Include="include\wiener\NoiseSup.h" />
+    <ClInclude Include="include\wiener\NoiseSupExports.h" />
+    <ClInclude Include="include\wiener\ParmInterface.h" />
+    <ClInclude Include="include\wiener\ParmType.h" />
+    <ClInclude Include="include\wiener\pitchInterface.h" />
+    <ClInclude Include="include\wiener\preProc.h" />
+    <ClInclude Include="include\wiener\wiener_common.h" />
+    <ClInclude Include="include\wiener\x_default.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\base\binary_io.c" />
+    <ClCompile Include="src\base\case.c" />
+    <ClCompile Include="src\base\filename.c" />
+    <ClCompile Include="src\base\genrand.c" />
+    <ClCompile Include="src\base\glist.c" />
+    <ClCompile Include="src\base\hash.c" />
+    <ClCompile Include="src\base\hash_table.c" />
+    <ClCompile Include="src\base\hci_malloc.c" />
+    <ClCompile Include="src\base\hci_msg.c" />
+    <ClCompile Include="src\base\linklist.c" />
+    <ClCompile Include="src\base\parse_config.c" />
+    <ClCompile Include="src\base\str2words.c" />
+    <ClCompile Include="src\base\utf8.c" />
+    <ClCompile Include="src\basic_op\basic_op.c" />
+    <ClCompile Include="src\epd\epd_main.c" />
+    <ClCompile Include="src\epd\hci_epd.c" />
+    <ClCompile Include="src\mfcc2feat\fx_agc.c" />
+    <ClCompile Include="src\mfcc2feat\fx_cms.c" />
+    <ClCompile Include="src\mfcc2feat\fx_compressframe.c" />
+    <ClCompile Include="src\mfcc2feat\fx_delta.c" />
+    <ClCompile Include="src\mfcc2feat\fx_dropframe.c" />
+    <ClCompile Include="src\mfcc2feat\fx_mfcc2feat.c" />
+    <ClCompile Include="src\mfcc2feat\fx_quantizer.c" />
+    <ClCompile Include="src\mfcc2feat\hci_fx_mfcc2feat.c" />
+    <ClCompile Include="src\pffft.c" />
+    <ClCompile Include="src\wave2mfcc\fx_hamming.c" />
+    <ClCompile Include="src\wave2mfcc\fx_mfcc.c" />
+    <ClCompile Include="src\wave2mfcc\fx_sigproc.c" />
+    <ClCompile Include="src\wave2mfcc\hci_wave2mfcc.c" />
+    <ClCompile Include="src\wiener\BufferIn.c" />
+    <ClCompile Include="src\wiener\classifyFrame.c" />
+    <ClCompile Include="src\wiener\computePCorr.c" />
+    <ClCompile Include="src\wiener\dsrAfeVad.c" />
+    <ClCompile Include="src\wiener\hci_wiener.c" />
+    <ClCompile Include="src\wiener\MelProc.c" />
+    <ClCompile Include="src\wiener\NoiseSup.c" />
+    <ClCompile Include="src\wiener\ParmInterface.c" />
+    <ClCompile Include="src\wiener\pitch.c" />
+    <ClCompile Include="src\wiener\preProc.c" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A204CA49-1865-4C33-851F-B8211CAAA012}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Feat2Pass</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

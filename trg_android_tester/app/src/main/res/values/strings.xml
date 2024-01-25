@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+    <!ENTITY trigger "샬롯">
+    ]>
+<resources>
+    <string name="trigger_word_string">&trigger;</string>
+    <string name="trigger_detected_msg">&trigger;이라고 불러보세요!</string>
+    <string name="app_name">SELVASAI &trigger; Trigger</string>
+    <string name="action_settings">Settings</string>
+</resources>
